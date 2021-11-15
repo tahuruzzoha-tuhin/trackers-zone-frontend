@@ -32,7 +32,7 @@ const Login = () => {
               <i
                 title="Google Login"
                 onClick={handleGoogleLogin}
-                className="fab fa-google text-light-green me-4 login-icon fa-2x"
+                className="fab fa-google text-primary me-4 login-icon fa-2x"
               ></i>
             </div>
           </div>

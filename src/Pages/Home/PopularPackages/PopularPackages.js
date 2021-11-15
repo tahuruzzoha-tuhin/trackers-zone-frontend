@@ -37,7 +37,7 @@ const PopularPackages = () => {
           </p>
         </Row>
         <Row xs={1} md={2} lg={3} className="mt-5">
-          {packDetails.slice(1, 10).map((detail) => (
+          {packDetails.slice(1, 7).map((detail) => (
             <SinglepackageCard
               key={detail._id}
               detail={detail}

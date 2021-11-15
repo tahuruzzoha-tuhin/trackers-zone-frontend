@@ -100,7 +100,7 @@ const Header = () => {
                 </div>
               ) : (
                 <Link to="/login" className="text-decoration-none ms-md-5">
-                  <Button className="btn-light-green fw-bold text-white px-4 py-2">
+                  <Button className="btn-blue fw-bold text-white px-4 py-2">
                     LogIn
                   </Button>
                 </Link>
