@@ -1,0 +1,19 @@
+#login {
+    background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('https://i.ibb.co/PZygzXg/carousel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center center;
+}
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(230, 221, 221, 0.2), rgba(243, 239, 240, 0.2));
+    padding: 20px;
+}
+.login-icon:hover {
+   color: #fff !important;
+   cursor: pointer;
+}
