@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Col, Container, Form, Row, Button } from "react-bootstrap";
+import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { useHistory } from "react-router-dom";
 import swal from "sweetalert";
@@ -37,7 +37,7 @@ const AddOrders = () => {
     data.duration = "1 Week";
     data.price = 7000;
 
-    fetch(' https://trackers-zone.herokuapp.com/addpackage', {
+    fetch('https://express-renderhost.onrender.com/addpackage', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'

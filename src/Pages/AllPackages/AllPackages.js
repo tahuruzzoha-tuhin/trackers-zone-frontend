@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Spinner } from "react-bootstrap";
 import SinglepackageCard from "./SinglePackageCard/SinglepackageCard";
 
@@ -7,7 +6,7 @@ const AllPackages = () => {
   const [packDetails, setPackDetails] = useState([]);
 
   useEffect(() => {
-    fetch(' https://trackers-zone.herokuapp.com/allpackages')
+    fetch('https://express-renderhost.onrender.com/allpackages')
       .then(res => res.json())
       .then(data => setPackDetails(data))
   }, [])

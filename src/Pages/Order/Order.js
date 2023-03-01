@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Col, Container, Form, Row, Button } from "react-bootstrap";
+import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { useHistory, useParams } from "react-router-dom";
 import swal from "sweetalert";
@@ -12,7 +12,7 @@ const Order = () => {
   const [orderedPack, setOrderedPack] = useState({});
 
   useEffect(() => {
-    fetch(` https://trackers-zone.herokuapp.com/order/${packid}`)
+    fetch(`https://express-renderhost.onrender.com/order/${packid}`)
       .then((res) => res.json())
       .then((data) => setOrderedPack(data));
   }, []);
@@ -32,7 +32,7 @@ const Order = () => {
     data.email = user?.email;
     data.order = orderedPack;
 
-    fetch(" https://trackers-zone.herokuapp.com/placeorder", {
+    fetch("https://express-renderhost.onrender.com/placeorder", {
       method: "POST",
       headers: {
         "content-type": "application/json",

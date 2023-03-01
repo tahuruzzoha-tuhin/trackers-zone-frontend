@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Col, Button } from "react-bootstrap";
+import { Button, Card, Col } from "react-bootstrap";
 import swal from "sweetalert";
 import "./ManageOrderCard.css";
 
@@ -9,7 +9,7 @@ const SinglepackageCard = ({ detail }) => {
   const handleDeletePack = (id) => {
     const proceed = window.confirm("Are you sure to delete the user?");
     if (proceed) {
-      const url = ` https://trackers-zone.herokuapp.com/allorder/${id}`;
+      const url = `https://express-renderhost.onrender.com/allorder/${id}`;
 
       fetch(url, {
         method: "DELETE",
@@ -26,7 +26,7 @@ const SinglepackageCard = ({ detail }) => {
 
 
   const handleUpdate = (id) => {
-    const url = ` https://trackers-zone.herokuapp.com/allorder/${id}`;
+    const url = `https://express-renderhost.onrender.com/allorder/${id}`;
 
     fetch(url, {
       method: "PUT",

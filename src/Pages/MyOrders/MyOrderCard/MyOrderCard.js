@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Col, Button } from "react-bootstrap";
+import { Button, Card, Col } from "react-bootstrap";
 import swal from "sweetalert";
 import "./MyOrderCard.css";
 
@@ -11,7 +11,7 @@ const SinglepackageCard = ({ detail }) => {
     const proceed = window.confirm("Are you sure to delete the user?");
     // const proceed = swal("Good job!", "You clicked the button!", "info");;
     if (proceed) {
-      const url = ` https://trackers-zone.herokuapp.com/allorder/${id}`;
+      const url = `https://express-renderhost.onrender.com/allorder/${id}`;
 
       fetch(url, {
         method: "DELETE"

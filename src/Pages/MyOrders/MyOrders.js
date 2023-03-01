@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
-import MyOrderCard from './MyOrderCard/MyOrderCard'
-import useAuth from '../../Assets/hooks/useAuth'
+import useAuth from '../../Assets/hooks/useAuth';
+import MyOrderCard from './MyOrderCard/MyOrderCard';
 
 const MyOrders = () => {
   const { user } = useAuth();
@@ -10,7 +9,7 @@ const MyOrders = () => {
   const [myOrders, setMyOrders] = useState([]);
 
   useEffect(() => {
-    fetch(` https://trackers-zone.herokuapp.com/myorders/${user?.email}`)
+    fetch(`https://express-renderhost.onrender.com/myorders/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         setMyOrders(data);

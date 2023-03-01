@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import ManageOrderCard from "./ManageOrderCard/ManageOrderCard";
 
@@ -7,7 +6,7 @@ const ManageOrders = () => {
   const [allOrders, setAllOrders] = useState([]);
 
   useEffect(() => {
-    fetch(" https://trackers-zone.herokuapp.com/allorder")
+    fetch("https://express-renderhost.onrender.com/allorder")
       .then((res) => res.json())
       .then((data) => setAllOrders(data));
   }, [allOrders]);

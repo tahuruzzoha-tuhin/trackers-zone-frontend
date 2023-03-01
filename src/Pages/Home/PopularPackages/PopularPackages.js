@@ -1,7 +1,5 @@
-import React from "react";
-import { useState } from "react";
-import { useEffect } from "react";
-import { Container, Row, Button, Spinner } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Button, Container, Row, Spinner } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import SinglepackageCard from "../../AllPackages/SinglePackageCard/SinglepackageCard";
 
@@ -9,7 +7,7 @@ const PopularPackages = () => {
   const [packDetails, setPackDetails] = useState([]);
 
   useEffect(() => {
-    fetch(" https://trackers-zone.herokuapp.com/allpackages")
+    fetch("https://express-renderhost.onrender.com/allpackages")
       .then((res) => res.json())
       .then((data) => setPackDetails(data));
   }, []);
