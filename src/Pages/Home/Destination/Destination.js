@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Form, FormSelect, Row, Button, Carousel } from "react-bootstrap";
+import { Container, Carousel } from "react-bootstrap";
 import slide1 from '../../../Assets/Images/guide1.png';
 import slide2 from '../../../Assets/Images/guide2.jpg';
 import slide3 from '../../../Assets/Images/guide3.png';

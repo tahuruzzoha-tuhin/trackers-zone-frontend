@@ -14,7 +14,7 @@ const MyOrders = () => {
       .then((data) => {
         setMyOrders(data);
       });
-  }, [myOrders]);
+  }, [myOrders, user?.email]);
 
 
   useEffect(() => {

@@ -15,7 +15,7 @@ const Order = () => {
     fetch(`https://express-renderhost.onrender.com/order/${packid}`)
       .then((res) => res.json())
       .then((data) => setOrderedPack(data));
-  }, []);
+  }, [packid]);
 
   const history = useHistory();
   const redirect_uri = "/myorders";
